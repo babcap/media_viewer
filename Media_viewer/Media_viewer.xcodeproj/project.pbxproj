@@ -13,6 +13,8 @@
 		8E75C3A22AA1AADA003AF74C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E75C3A02AA1AADA003AF74C /* Main.storyboard */; };
 		8E75C3A42AA1AADB003AF74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E75C3A32AA1AADB003AF74C /* Assets.xcassets */; };
 		8E75C3A72AA1AADB003AF74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E75C3A52AA1AADB003AF74C /* LaunchScreen.storyboard */; };
+		8E75C3B02AA1AD76003AF74C /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = 8E75C3AF2AA1AD76003AF74C /* SwiftyDropbox */; };
+		8E75C3B22AA1B0D4003AF74C /* DropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E75C3B12AA1B0D4003AF74C /* DropBoxManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		8E75C3A32AA1AADB003AF74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E75C3A62AA1AADB003AF74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E75C3A82AA1AADB003AF74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E75C3B12AA1B0D4003AF74C /* DropBoxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropBoxManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E75C3B02AA1AD76003AF74C /* SwiftyDropbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				8E75C39A2AA1AADA003AF74C /* AppDelegate.swift */,
 				8E75C39C2AA1AADA003AF74C /* SceneDelegate.swift */,
 				8E75C39E2AA1AADA003AF74C /* ViewController.swift */,
+				8E75C3B12AA1B0D4003AF74C /* DropBoxManager.swift */,
 				8E75C3A02AA1AADA003AF74C /* Main.storyboard */,
 				8E75C3A32AA1AADB003AF74C /* Assets.xcassets */,
 				8E75C3A52AA1AADB003AF74C /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Media_viewer;
+			packageProductDependencies = (
+				8E75C3AF2AA1AD76003AF74C /* SwiftyDropbox */,
+			);
 			productName = Media_viewer;
 			productReference = 8E75C3972AA1AADA003AF74C /* Media_viewer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 8E75C38E2AA1AADA003AF74C;
+			packageReferences = (
+				8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
+			);
 			productRefGroup = 8E75C3982AA1AADA003AF74C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E75C3B22AA1B0D4003AF74C /* DropBoxManager.swift in Sources */,
 				8E75C39F2AA1AADA003AF74C /* ViewController.swift in Sources */,
 				8E75C39B2AA1AADA003AF74C /* AppDelegate.swift in Sources */,
 				8E75C39D2AA1AADA003AF74C /* SceneDelegate.swift in Sources */,
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E75C3AF2AA1AD76003AF74C /* SwiftyDropbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;
+			productName = SwiftyDropbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E75C38F2AA1AADA003AF74C /* Project object */;
 }

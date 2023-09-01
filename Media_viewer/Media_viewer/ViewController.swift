@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onButtonPressed(_ sender: Any) {
+        DropBoxManager.shared.showAutorization(from: self)
+    }
+    
 }
 
