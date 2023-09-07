@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "pushwoosh-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3ea292bda402788c51999aa69f28a2972c4abd42"
+      }
+    },
+    {
       "identity" : "swiftydropbox",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dropbox/SwiftyDropbox.git",
