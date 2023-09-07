@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "ios_sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adjust/ios_sdk",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3a19868552e27655249bd67dc4016faa41dbe48e"
+      }
+    },
+    {
       "identity" : "swiftydropbox",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dropbox/SwiftyDropbox.git",

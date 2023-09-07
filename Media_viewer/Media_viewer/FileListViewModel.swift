@@ -34,7 +34,7 @@ class FileListViewModel {
     var fileCellViewModels = [FileCellViewModel]()
 
     func getFiles(with completion: Completion?) {
-        guard !DropBoxManager.shared.isMaxCount else {
+        guard !DropBoxManager.shared.isMaxCount, self.fileCellViewModels.count != DropBoxManager.shared.files.count else {
             completion?()
             self.fileCellViewModels = DropBoxManager.shared.files.compactMap {
                 guard let cellVM = createViewModel(result: $0) else { return nil }

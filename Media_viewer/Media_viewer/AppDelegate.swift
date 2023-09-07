@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import Adjust
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         DropBoxManager.shared.initializeClient()
+
+        let yourAppToken = "{YourAppToken}"
+        let adjustConfig = ADJConfig(
+            appToken: yourAppToken,
+            environment: ADJEnvironmentSandbox)
+        adjustConfig?.logLevel = ADJLogLevelVerbose
+        Adjust.appDidLaunch(adjustConfig)
         return true
     }
 

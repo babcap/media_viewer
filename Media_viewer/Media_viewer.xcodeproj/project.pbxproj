@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8E37E4742AA76882008EE976 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37E4732AA76882008EE976 /* URL+Extensions.swift */; };
+		8E37E4772AA9B4D6008EE976 /* Adjust in Frameworks */ = {isa = PBXBuildFile; productRef = 8E37E4762AA9B4D6008EE976 /* Adjust */; };
+		8E37E4792AA9B4D6008EE976 /* Criteo in Frameworks */ = {isa = PBXBuildFile; productRef = 8E37E4782AA9B4D6008EE976 /* Criteo */; };
+		8E37E47B2AA9B4D6008EE976 /* Sociomantic in Frameworks */ = {isa = PBXBuildFile; productRef = 8E37E47A2AA9B4D6008EE976 /* Sociomantic */; };
+		8E37E47D2AA9B4D6008EE976 /* Trademob in Frameworks */ = {isa = PBXBuildFile; productRef = 8E37E47C2AA9B4D6008EE976 /* Trademob */; };
+		8E37E47F2AA9B4D6008EE976 /* WebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 8E37E47E2AA9B4D6008EE976 /* WebBridge */; };
 		8E57A2232AA45A04000BDCD3 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E57A2222AA45A04000BDCD3 /* FileListViewController.swift */; };
 		8E57A2252AA45A43000BDCD3 /* FileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E57A2242AA45A43000BDCD3 /* FileListViewModel.swift */; };
 		8E57A2272AA4FD30000BDCD3 /* FileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E57A2262AA4FD30000BDCD3 /* FileCell.xib */; };
@@ -46,7 +51,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E37E47F2AA9B4D6008EE976 /* WebBridge in Frameworks */,
+				8E37E47B2AA9B4D6008EE976 /* Sociomantic in Frameworks */,
 				8E75C3B02AA1AD76003AF74C /* SwiftyDropbox in Frameworks */,
+				8E37E47D2AA9B4D6008EE976 /* Trademob in Frameworks */,
+				8E37E4792AA9B4D6008EE976 /* Criteo in Frameworks */,
+				8E37E4772AA9B4D6008EE976 /* Adjust in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +118,11 @@
 			name = Media_viewer;
 			packageProductDependencies = (
 				8E75C3AF2AA1AD76003AF74C /* SwiftyDropbox */,
+				8E37E4762AA9B4D6008EE976 /* Adjust */,
+				8E37E4782AA9B4D6008EE976 /* Criteo */,
+				8E37E47A2AA9B4D6008EE976 /* Sociomantic */,
+				8E37E47C2AA9B4D6008EE976 /* Trademob */,
+				8E37E47E2AA9B4D6008EE976 /* WebBridge */,
 			);
 			productName = Media_viewer;
 			productReference = 8E75C3972AA1AADA003AF74C /* Media_viewer.app */;
@@ -139,6 +154,7 @@
 			mainGroup = 8E75C38E2AA1AADA003AF74C;
 			packageReferences = (
 				8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
+				8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */,
 			);
 			productRefGroup = 8E75C3982AA1AADA003AF74C /* Products */;
 			projectDirPath = "";
@@ -398,6 +414,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
@@ -409,6 +433,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E37E4762AA9B4D6008EE976 /* Adjust */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Adjust;
+		};
+		8E37E4782AA9B4D6008EE976 /* Criteo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Criteo;
+		};
+		8E37E47A2AA9B4D6008EE976 /* Sociomantic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Sociomantic;
+		};
+		8E37E47C2AA9B4D6008EE976 /* Trademob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Trademob;
+		};
+		8E37E47E2AA9B4D6008EE976 /* WebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E37E4752AA9B4D6008EE976 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = WebBridge;
+		};
 		8E75C3AF2AA1AD76003AF74C /* SwiftyDropbox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8E75C3AE2AA1AD76003AF74C /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;

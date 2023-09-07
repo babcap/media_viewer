@@ -23,8 +23,9 @@
                                     <constraint firstAttribute="width" constant="75" id="0uZ-ct-fyn"/>
                                     <constraint firstAttribute="height" constant="35" id="tCd-Nc-peR"/>
                                 </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyu-Ws-Zav"/>
                                 </connections>
