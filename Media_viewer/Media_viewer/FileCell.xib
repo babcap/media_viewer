@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FileCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FileCell" rowHeight="150" id="gN8-aC-sK2" userLabel="FileCell" customClass="FileCell" customModule="Media_viewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gN8-aC-sK2" id="cnN-Lz-f9U">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQq-hD-YHe">
+                        <rect key="frame" x="16" y="16" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4kq-Ou-a44"/>
+                            <constraint firstAttribute="width" secondItem="IQq-hD-YHe" secondAttribute="height" multiplier="1:1" id="vVC-1t-lV1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbt-XT-v0b">
+                        <rect key="frame" x="92" y="36" width="308" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="K9Y-cp-vj8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IQq-hD-YHe" firstAttribute="leading" secondItem="cnN-Lz-f9U" secondAttribute="leading" constant="16" id="EGS-53-mkr"/>
+                    <constraint firstAttribute="bottom" secondItem="IQq-hD-YHe" secondAttribute="bottom" constant="16" id="N3A-qn-6rf"/>
+                    <constraint firstItem="Wbt-XT-v0b" firstAttribute="leading" secondItem="IQq-hD-YHe" secondAttribute="trailing" constant="16" id="TMZ-1U-EZQ"/>
+                    <constraint firstItem="IQq-hD-YHe" firstAttribute="top" secondItem="cnN-Lz-f9U" secondAttribute="top" constant="16" id="g73-aW-Z7X"/>
+                    <constraint firstItem="Wbt-XT-v0b" firstAttribute="centerY" secondItem="IQq-hD-YHe" secondAttribute="centerY" id="sYe-U8-zte"/>
+                    <constraint firstAttribute="trailing" secondItem="Wbt-XT-v0b" secondAttribute="trailing" constant="16" id="w0I-kE-kyg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="Wbt-XT-v0b" id="jWF-sl-pP9"/>
+                <outlet property="previewImageView" destination="IQq-hD-YHe" id="Quo-XB-540"/>
+            </connections>
+            <point key="canvasLocation" x="314.50381679389312" y="26.056338028169016"/>
+        </tableViewCell>
+    </objects>
+</document>
